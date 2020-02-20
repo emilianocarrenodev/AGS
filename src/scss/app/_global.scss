@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none !important;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    outline: 0px;
+}
+
+html {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    background: #FFF;
+    overflow-x: hidden;
+}
+
+header,
+footer,
+section {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+/*padding y margin*/
+
+/*Titulos*/
+
+/*Parrafos*/
+
+/*Botones*/
+
+/*Formularios*/

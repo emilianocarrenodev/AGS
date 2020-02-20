@@ -1,0 +1,158 @@
+.block-banner-main {
+
+    .swiper-container {
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                text-align: center;
+                background-color: #FFF;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+
+                .container {
+                    min-height: 1024px;
+                    padding-top: 200px;
+                    padding-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    // Breakpoints
+                    @include respond-to($phone) {
+                        min-height: 300px;
+                        padding-top: 110px;
+                    }
+
+                    @include respond-to($phone-tablet) {
+                        min-height: 400px;
+                        padding-top: 110px;
+                    }
+
+                    @include respond-to($tablet-medium) {
+                        min-height: 600px;
+                        padding-top: 110px;
+                    }
+
+                    @include respond-to($medium-large) {
+                        min-height: 900px;
+                        padding-top: 110px;
+                    }
+
+                    p {
+                        text-transform: uppercase;
+                        line-height: 39px;
+                        font-weight: 300;
+                        font-size: 32px;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+
+        .swiper-pagination {
+            margin-top: -38px;
+            margin-bottom: 38px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                margin-top: -30px;
+                margin-bottom: 30px;
+            }
+
+            @include respond-to($phone-tablet) {
+                margin-top: -30px;
+                margin-bottom: 30px;
+            }
+
+            .swiper-pagination-bullet {
+                width: 45px;
+                height: 2px;
+                margin: 0px 4px;
+                background-color: #FFF;
+                cursor: pointer;
+
+                &.swiper-pagination-bullet-active {
+                    background-color: $color-primary;
+                }
+            }
+        }
+
+        .swiper-button-next {
+            width: 72px;
+            height: 72px;
+            top: 53%;
+            left: 27px;
+            position: absolute;
+            background-color: $color-primary;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                display: none;
+            }
+
+            @include respond-to($phone-tablet) {
+                display: none;
+            }
+
+            i {
+                font-weight: 700;
+                line-height: 41px;
+                font-size: 41px;
+                color: #FFF;
+            }
+        }
+
+        .swiper-button-prev {
+            width: 72px;
+            height: 72px;
+            top: 53%;
+            left: auto;
+            right: 27px;
+            position: absolute;
+            background-color: $color-primary;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                display: none;
+            }
+
+            @include respond-to($phone-tablet) {
+                display: none;
+            }
+
+            i {
+                font-weight: 700;
+                line-height: 41px;
+                font-size: 41px;
+                color: #FFF;
+            }
+        }
+    }
+}
