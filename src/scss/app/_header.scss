@@ -1,1 +1,71 @@
-header {}
+header {
+
+    .navbar {
+        padding-top: 37px;
+        background-color: transparent !important;
+
+        .nav {
+
+            .nav-item {
+
+                .nav-link {
+                    margin-right: 30px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $color-primary;
+                    padding-left: 50px;
+                    background-color: transparent;
+                    background-size: 16px auto;
+                    background-position: left center;
+                    background-repeat: no-repeat;
+
+                    &.icon-phone {
+                        background-image: url('../img/icon-whatsapp.png');
+                    }
+
+                    &.icon-email {
+                        background-image: url('../img/icon-email.png');
+                    }
+                }
+
+                &:last-child {
+
+                    .nav-link {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+        .navbar-collapse {
+
+            .navbar-nav {
+
+                .nav-item {
+                    margin-right: 50px;
+
+                    .nav-link {
+                        padding: 0px 3px;
+                        border-left: 3px solid transparent;
+                        text-transform: uppercase;
+                        line-height: 11px;
+                        font-weight: 700;
+                        font-size: 15px;
+                        color: $color-primary;
+
+                        &:hover,
+                        &.active {
+                            border-left: 3px solid $color-primary;
+                            color: $color-secondary;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

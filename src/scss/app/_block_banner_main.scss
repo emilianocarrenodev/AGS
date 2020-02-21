@@ -7,13 +7,13 @@
             .swiper-slide {
                 text-align: center;
                 background-color: #FFF;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
+                background-size: 1px 1px, cover;
+                background-position: top left, center center;
+                background-repeat: repeat, no-repeat;
 
                 .container {
-                    min-height: 1024px;
-                    padding-top: 200px;
+                    min-height: 687px;
+                    padding-top: 30px;
                     padding-bottom: 30px;
                     display: flex;
                     flex-direction: column;
