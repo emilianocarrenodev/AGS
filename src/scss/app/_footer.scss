@@ -1,1 +1,120 @@
-footer {}
+footer {
+    padding: 70px 0px 100px 0px;
+    border-bottom: 55px solid $color-secondary;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        padding: 40px 0px 50px 0px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding: 40px 0px 50px 0px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding: 40px 0px 50px 0px;
+    }
+
+    h2 {
+        margin-bottom: 22px;
+        font-weight: 600;
+        line-height: 35px;
+        font-size: 35px;
+        color: $color-primary;
+    }
+
+    p {
+        font-weight: 600;
+        line-height: 12px;
+        font-size: 9px;
+        color: $color-primary;
+    }
+
+    ul {
+        margin-top: 35px;
+        margin-bottom: 30px;
+        padding-left: 0px;
+        list-style: none;
+
+        li {
+            padding-left: 50px;
+            background: transparent url('../img/icon-email.png') left center no-repeat;
+
+            a {
+                font-weight: 600;
+                line-height: 40px;
+                font-size: 15px;
+                color: $color-primary;
+
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+
+    .container-social-network {
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            width: 30px;
+            height: 30px;
+            margin: 0px 15px;
+            background-color: $color-secondary;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+
+            i {
+                font-size: 15px;
+                color: #FFF;
+            }
+        }
+    }
+
+    .form-group {
+
+        .form-control {
+            height: 30px;
+            border: none;
+            background-color: rgba(224, 159, 50, 0.5);
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+
+            &::-webkit-input-placeholder {
+                font-weight: 500;
+                line-height: 15px;
+                font-size: 15px;
+                color: $color-primary;
+            }
+
+            &:-ms-input-placeholder {
+                font-weight: 500;
+                line-height: 15px;
+                font-size: 15px;
+                color: $color-primary;
+            }
+
+            &::placeholder {
+                font-weight: 500;
+                line-height: 15px;
+                font-size: 15px;
+                color: $color-primary;
+            }
+        }
+
+        textarea {
+            height: auto !important;
+        }
+    }
+}

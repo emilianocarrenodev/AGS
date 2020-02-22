@@ -1,8 +1,29 @@
 header {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 9999;
 
     .navbar {
         padding-top: 37px;
         background-color: transparent !important;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            padding-top: 15px;
+        }
+
+        @include respond-to($phone-tablet) {
+            padding-top: 15px;
+        }
+
+        @include respond-to($tablet-medium) {
+            padding-top: 15px;
+        }
+
+        @include respond-to($medium-large) {
+            padding-top: 15px;
+        }
 
         .nav {
 
@@ -19,6 +40,12 @@ header {
                     background-size: 16px auto;
                     background-position: left center;
                     background-repeat: no-repeat;
+
+                    // Breakpoints
+                    @include respond-to($large-extra) {
+                        margin-right: 0px;
+                        padding-left: 30px;
+                    }
 
                     &.icon-phone {
                         background-image: url('../img/icon-whatsapp.png');
@@ -45,19 +72,50 @@ header {
                 .nav-item {
                     margin-right: 50px;
 
+                    // Breakpoints
+                    @include respond-to($large-extra) {
+                        margin-right: 30px;
+                    }
+
                     .nav-link {
-                        padding: 0px 3px;
-                        border-left: 3px solid transparent;
+                        padding: 0px;
                         text-transform: uppercase;
-                        line-height: 11px;
+                        line-height: 24px;
                         font-weight: 700;
                         font-size: 15px;
                         color: $color-primary;
 
+                        // Breakpoints
+                        @include respond-to($phone) {
+                            margin-bottom: 10px;
+                        }
+
+                        @include respond-to($phone-tablet) {
+                            margin-bottom: 10px;
+                        }
+
+                        @include respond-to($tablet-medium) {
+                            margin-bottom: 10px;
+                        }
+
+                        @include respond-to($medium-large) {
+                            margin-bottom: 10px;
+                        }
+
+                        span {
+                            line-height: 24px;
+                            font-weight: 700;
+                            font-size: 15px;
+                            color: $color-primary;
+                        }
+
                         &:hover,
                         &.active {
-                            border-left: 3px solid $color-primary;
                             color: $color-secondary;
+
+                            span {
+                                color: $color-primary;
+                            }
                         }
                     }
 

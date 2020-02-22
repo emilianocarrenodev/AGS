@@ -3,7 +3,7 @@ import 'bootstrap';
 import { WOW } from 'wowjs';
 import { Swiper, Pagination, Navigation } from 'swiper/js/swiper.esm.js';
 
-Swiper.use([Pagination, Navigation]);
+Swiper.use([Navigation]);
 
 var wow = new WOW({
     live: false,
@@ -19,11 +19,6 @@ if ($.contains(document.body, document.getElementById('slider-main'))) {
     var mySwiper = new Swiper('.swiper-container', {
         autoplay: {
             delay: 5000,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
         },
         navigation: {
             nextEl: '.swiper-button-next',

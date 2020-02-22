@@ -23,22 +23,14 @@
                     // Breakpoints
                     @include respond-to($phone) {
                         min-height: 300px;
-                        padding-top: 110px;
                     }
 
                     @include respond-to($phone-tablet) {
                         min-height: 400px;
-                        padding-top: 110px;
                     }
 
                     @include respond-to($tablet-medium) {
                         min-height: 600px;
-                        padding-top: 110px;
-                    }
-
-                    @include respond-to($medium-large) {
-                        min-height: 900px;
-                        padding-top: 110px;
                     }
 
                     p {
@@ -52,89 +44,34 @@
             }
         }
 
-        .swiper-pagination {
-            margin-top: -38px;
-            margin-bottom: 38px;
-            position: relative;
+        .swiper-button-prev {
+            width: 32px;
+            height: 32px;
+            top: 47%;
+            left: 40px;
+            position: absolute;
+            background: transparent url('../img/swiper-button-prev.png') center center / 32px 32px no-repeat;
+            cursor: pointer;
             z-index: 1;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
 
             // Breakpoints
             @include respond-to($phone) {
-                margin-top: -30px;
-                margin-bottom: 30px;
+                display: none;
             }
 
             @include respond-to($phone-tablet) {
-                margin-top: -30px;
-                margin-bottom: 30px;
-            }
-
-            .swiper-pagination-bullet {
-                width: 45px;
-                height: 2px;
-                margin: 0px 4px;
-                background-color: #FFF;
-                cursor: pointer;
-
-                &.swiper-pagination-bullet-active {
-                    background-color: $color-primary;
-                }
+                display: none;
             }
         }
 
         .swiper-button-next {
-            width: 72px;
-            height: 72px;
-            top: 53%;
-            left: 27px;
-            position: absolute;
-            background-color: $color-primary;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            z-index: 1;
-
-            // Breakpoints
-            @include respond-to($phone) {
-                display: none;
-            }
-
-            @include respond-to($phone-tablet) {
-                display: none;
-            }
-
-            i {
-                font-weight: 700;
-                line-height: 41px;
-                font-size: 41px;
-                color: #FFF;
-            }
-        }
-
-        .swiper-button-prev {
-            width: 72px;
-            height: 72px;
-            top: 53%;
+            width: 32px;
+            height: 32px;
+            top: 47%;
             left: auto;
-            right: 27px;
+            right: 40px;
             position: absolute;
-            background-color: $color-primary;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            background: transparent url('../img/swiper-button-next.png') center center / 32px 32px no-repeat;
             cursor: pointer;
             z-index: 1;
 
@@ -145,13 +82,6 @@
 
             @include respond-to($phone-tablet) {
                 display: none;
-            }
-
-            i {
-                font-weight: 700;
-                line-height: 41px;
-                font-size: 41px;
-                color: #FFF;
             }
         }
     }

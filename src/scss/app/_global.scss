@@ -39,5 +39,21 @@ section {
 /*Parrafos*/
 
 /*Botones*/
+.btn-primary {
+    padding: 15px 50px;
+    text-transform: uppercase;
+    border: 2px solid $color-primary;
+    background-color: transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: $color-primary;
+
+    &:hover {
+        border: 2px solid $color-primary;
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+}
 
 /*Formularios*/
