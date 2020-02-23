@@ -10,8 +10,6 @@ var wow = new WOW({
     scrollContainer: null
 });
 
-$('header').load("header.html");
-
 $('footer').load("footer.html", function(response, status, xhr) {
     wow.init();
 });

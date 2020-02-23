@@ -1,4 +1,4 @@
-footer {
+.section-footer {
     padding: 70px 0px 60px 0px;
     border-bottom: 55px solid $color-secondary;
     background-color: transparent;
@@ -157,6 +157,50 @@ footer {
 
         textarea {
             height: auto !important;
+        }
+    }
+
+    &.type-two {
+        background: transparent;
+
+        .img-fluid {
+
+            // Breakpoints
+            @include respond-to($phone) {
+                margin-top: 50px;
+            }
+
+            @include respond-to($phone-tablet) {
+                margin-top: 50px;
+            }
+
+            @include respond-to($tablet-medium) {
+                margin-top: 50px;
+            }
+
+            @include respond-to($medium-large) {
+                margin-top: 50px;
+            }
+        }
+
+        .container-social-network {
+
+            // Breakpoints
+            @include respond-to($phone) {
+                margin-bottom: 10px;
+            }
+
+            @include respond-to($phone-tablet) {
+                margin-bottom: 10px;
+            }
+
+            @include respond-to($tablet-medium) {
+                margin-bottom: 10px;
+            }
+
+            @include respond-to($medium-large) {
+                margin-bottom: 10px;
+            }
         }
     }
 }

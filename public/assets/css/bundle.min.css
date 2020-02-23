@@ -13192,9 +13192,6 @@ section {
   height: 73px;
   display: block; }
 
-/*padding y margin*/
-/*Titulos*/
-/*Parrafos*/
 /*Botones*/
 .btn-primary {
   padding: 15px 50px;
@@ -13242,7 +13239,6 @@ section {
   .btn-info:hover, .btn-info.active {
     background-color: #091C6D !important; }
 
-/*Formularios*/
 header {
   top: 0px;
   left: 0px;
@@ -13320,7 +13316,7 @@ header {
       header .navbar .navbar-collapse .navbar-nav .nav-item:last-child {
         margin-right: 0px; }
 
-footer {
+.section-footer {
   padding: 70px 0px 60px 0px;
   border-bottom: 55px solid #E09F32;
   background-color: transparent;
@@ -13329,56 +13325,56 @@ footer {
   background-position: left top;
   background-repeat: no-repeat; }
   @media only screen and (max-width: 479px) {
-    footer {
+    .section-footer {
       padding: 60px 0px 50px 0px;
       background-image: url("../img/bg-orange-top-100.png"); } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
-    footer {
+    .section-footer {
       padding: 60px 0px 50px 0px;
       background-image: url("../img/bg-orange-top-100.png"); } }
   @media only screen and (min-width: 768px) and (max-width: 849px) {
-    footer {
+    .section-footer {
       padding: 60px 0px 50px 0px;
       background-image: url("../img/bg-orange-top-100.png"); } }
   @media only screen and (min-width: 850px) and (max-width: 990px) {
-    footer {
+    .section-footer {
       background-image: url("../img/bg-orange-top-100.png"); } }
-  footer h2 {
+  .section-footer h2 {
     margin-bottom: 22px;
     font-weight: 600;
     line-height: 35px;
     font-size: 35px;
     color: #091C6D; }
-  footer p {
+  .section-footer p {
     font-weight: 600;
     line-height: 12px;
     font-size: 9px;
     color: #091C6D; }
-  footer ul {
+  .section-footer ul {
     margin-top: 35px;
     margin-bottom: 30px;
     padding-left: 0px;
     list-style: none; }
-    footer ul li {
+    .section-footer ul li {
       padding-left: 50px;
       background: transparent url("../img/icon-email.png") left center no-repeat; }
       @media only screen and (max-width: 479px) {
-        footer ul li {
+        .section-footer ul li {
           padding-left: 30px; } }
       @media only screen and (min-width: 480px) and (max-width: 767px) {
-        footer ul li {
+        .section-footer ul li {
           padding-left: 30px; } }
       @media only screen and (min-width: 768px) and (max-width: 849px) {
-        footer ul li {
+        .section-footer ul li {
           padding-left: 30px; } }
-      footer ul li a {
+      .section-footer ul li a {
         font-weight: 600;
         line-height: 40px;
         font-size: 15px;
         color: #091C6D; }
-        footer ul li a:hover {
+        .section-footer ul li a:hover {
           color: #E09F32; }
-  footer .container-social-network {
+  .section-footer .container-social-network {
     width: 100%;
     margin-bottom: 0px;
     display: -webkit-box;
@@ -13391,18 +13387,18 @@ footer {
     -webkit-box-align: center;
             align-items: center; }
     @media only screen and (max-width: 479px) {
-      footer .container-social-network {
+      .section-footer .container-social-network {
         margin-bottom: 30px; } }
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-      footer .container-social-network {
+      .section-footer .container-social-network {
         margin-bottom: 30px; } }
     @media only screen and (min-width: 768px) and (max-width: 849px) {
-      footer .container-social-network {
+      .section-footer .container-social-network {
         margin-bottom: 30px; } }
     @media only screen and (min-width: 850px) and (max-width: 990px) {
-      footer .container-social-network {
+      .section-footer .container-social-network {
         margin-bottom: 30px; } }
-    footer .container-social-network a {
+    .section-footer .container-social-network a {
       width: 30px;
       height: 30px;
       margin: 0px 15px;
@@ -13417,41 +13413,67 @@ footer {
       -webkit-box-align: center;
               align-items: center;
       border-radius: 50%; }
-      footer .container-social-network a i {
+      .section-footer .container-social-network a i {
         font-size: 15px;
         color: #FFF; }
-  footer .form-group .form-control {
+  .section-footer .form-group .form-control {
     height: 30px;
     border: none;
     background-color: rgba(224, 159, 50, 0.5);
     border-radius: 0px; }
-    footer .form-group .form-control::-webkit-input-placeholder {
+    .section-footer .form-group .form-control::-webkit-input-placeholder {
       font-weight: 500;
       line-height: 15px;
       font-size: 15px;
       color: #091C6D; }
-    footer .form-group .form-control:-ms-input-placeholder {
+    .section-footer .form-group .form-control:-ms-input-placeholder {
       font-weight: 500;
       line-height: 15px;
       font-size: 15px;
       color: #091C6D; }
-    footer .form-group .form-control::-moz-placeholder {
+    .section-footer .form-group .form-control::-moz-placeholder {
       font-weight: 500;
       line-height: 15px;
       font-size: 15px;
       color: #091C6D; }
-    footer .form-group .form-control::-ms-input-placeholder {
+    .section-footer .form-group .form-control::-ms-input-placeholder {
       font-weight: 500;
       line-height: 15px;
       font-size: 15px;
       color: #091C6D; }
-    footer .form-group .form-control::placeholder {
+    .section-footer .form-group .form-control::placeholder {
       font-weight: 500;
       line-height: 15px;
       font-size: 15px;
       color: #091C6D; }
-  footer .form-group textarea {
+  .section-footer .form-group textarea {
     height: auto !important; }
+  .section-footer.type-two {
+    background: transparent; }
+    @media only screen and (max-width: 479px) {
+      .section-footer.type-two .img-fluid {
+        margin-top: 50px; } }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      .section-footer.type-two .img-fluid {
+        margin-top: 50px; } }
+    @media only screen and (min-width: 768px) and (max-width: 849px) {
+      .section-footer.type-two .img-fluid {
+        margin-top: 50px; } }
+    @media only screen and (min-width: 850px) and (max-width: 990px) {
+      .section-footer.type-two .img-fluid {
+        margin-top: 50px; } }
+    @media only screen and (max-width: 479px) {
+      .section-footer.type-two .container-social-network {
+        margin-bottom: 10px; } }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      .section-footer.type-two .container-social-network {
+        margin-bottom: 10px; } }
+    @media only screen and (min-width: 768px) and (max-width: 849px) {
+      .section-footer.type-two .container-social-network {
+        margin-bottom: 10px; } }
+    @media only screen and (min-width: 850px) and (max-width: 990px) {
+      .section-footer.type-two .container-social-network {
+        margin-bottom: 10px; } }
 
 .block-banner-main .swiper-container .swiper-wrapper .swiper-slide {
   text-align: center;
@@ -13859,6 +13881,8 @@ footer {
           line-height: 25px;
           font-size: 18px;
           color: #091C6D; }
+  .block-contact-us-main.border-bottom-55 {
+    border-bottom: 55px solid #E09F32; }
 
 .block-about-us {
   padding: 40px 0px 57px 0px; }
