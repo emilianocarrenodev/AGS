@@ -85,4 +85,38 @@
             }
         }
     }
+
+    &.type-two {
+        border-bottom: 25px solid $color-secondary;
+
+        .swiper-container {
+
+            .swiper-wrapper {
+
+                .swiper-slide {
+
+                    .container {
+                        min-height: 347px;
+                        padding-top: 100px;
+
+                        // Breakpoints
+                        @include respond-to($phone) {
+                            min-height: 300px;
+                            padding-top: 30px;
+                        }
+
+                        @include respond-to($phone-tablet) {
+                            min-height: 300px;
+                            padding-top: 30px;
+                        }
+
+                        @include respond-to($tablet-medium) {
+                            min-height: 300px;
+                            padding-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

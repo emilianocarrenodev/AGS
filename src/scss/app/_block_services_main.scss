@@ -1,0 +1,119 @@
+.block-services-main {
+    padding-top: 37px;
+    background-color: #FFF;
+    background-size: 1px 1px, cover;
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+
+    .container {
+
+        .img-fluid {
+            margin-bottom: 37px;
+        }
+    }
+
+    .container-links-services {
+        width: 100%;
+        min-height: 605px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        .content-items {
+            width: 100%;
+            max-width: 648px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                max-width: 100%;
+            }
+
+            @include respond-to($phone-tablet) {
+                max-width: 100%;
+            }
+
+            @include respond-to($tablet-medium) {
+                max-width: 100%;
+            }
+
+            a {
+                width: 50%;
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    width: 100%;
+                }
+
+                @include respond-to($phone-tablet) {
+                    width: 100%;
+                }
+
+                @include respond-to($tablet-medium) {
+                    width: 100%;
+                }
+
+                .btn-item {
+                    width: 100%;
+                    height: 189px;
+                    padding: 38px 15px 15px 38px;
+                    overflow: hidden;
+                    background: transparent url('../img/bg-services-white.png') left top repeat;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    h4 {
+                        text-transform: uppercase;
+                        line-height: 25px;
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: $color-primary;
+                    }
+
+                    .img-arrow {
+                        align-self: flex-end;
+                    }
+
+                    &.bg-orange {
+                        background: transparent url('../img/bg-services-orange.png') left top repeat;
+                    }
+
+                    &.row-two {
+
+                        // Breakpoints
+                        @include respond-to($phone) {
+                            background: transparent url('../img/bg-services-orange.png') left top repeat;
+
+                            &.bg-orange {
+                                background: transparent url('../img/bg-services-white.png') left top repeat;
+                            }
+                        }
+
+                        @include respond-to($phone-tablet) {
+                            background: transparent url('../img/bg-services-orange.png') left top repeat;
+
+                            &.bg-orange {
+                                background: transparent url('../img/bg-services-white.png') left top repeat;
+                            }
+                        }
+
+                        @include respond-to($tablet-medium) {
+                            background: transparent url('../img/bg-services-orange.png') left top repeat;
+
+                            &.bg-orange {
+                                background: transparent url('../img/bg-services-white.png') left top repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

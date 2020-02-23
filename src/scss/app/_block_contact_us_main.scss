@@ -1,0 +1,110 @@
+.block-contact-us-main {
+    padding: 30px 0px 55px 0px;
+    background-color: #FFF;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        padding: 30px 0px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding: 30px 0px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding: 30px 0px;
+    }
+
+    .container-info {
+        padding: 41px 15px 30px 110px;
+        background-color: $color-secondary;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            padding: 30px 15px;
+        }
+
+        @include respond-to($phone-tablet) {
+            padding: 30px 15px;
+        }
+
+        @include respond-to($tablet-medium) {
+            padding: 30px 15px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 35px;
+            color: #FFF;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0px;
+
+            li {
+                min-height: 30px;
+                margin-bottom: 25px;
+                padding-left: 55px;
+                line-height: 25px;
+                font-size: 18px;
+                color: $color-primary;
+
+                &.icon-location {
+                    background: transparent url('../img/icon-location.png') left 6px no-repeat;
+                }
+
+                &.icon-whatsapp {
+                    background: transparent url('../img/icon-whatsapp-white.png') left 6px no-repeat;
+                }
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    padding-left: 30px;
+
+                    &.icon-location {
+                        background: transparent url('../img/icon-location.png') left 6px no-repeat;
+                    }
+
+                    &.icon-whatsapp {
+                        background: transparent url('../img/icon-whatsapp-white.png') left 6px no-repeat;
+                    }
+                }
+
+                @include respond-to($phone-tablet) {
+                    padding-left: 30px;
+
+                    &.icon-location {
+                        background: transparent url('../img/icon-location.png') left 6px no-repeat;
+                    }
+
+                    &.icon-whatsapp {
+                        background: transparent url('../img/icon-whatsapp-white.png') left 6px no-repeat;
+                    }
+                }
+
+                @include respond-to($tablet-medium) {
+                    padding-left: 30px;
+
+                    &.icon-location {
+                        background: transparent url('../img/icon-location.png') 16px 6px no-repeat;
+                    }
+
+                    &.icon-whatsapp {
+                        background: transparent url('../img/icon-whatsapp-white.png') 16px 6px no-repeat;
+                    }
+                }
+
+                a {
+                    line-height: 25px;
+                    font-size: 18px;
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

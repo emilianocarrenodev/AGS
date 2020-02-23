@@ -12,7 +12,13 @@ var wow = new WOW({
 
 $('header').load("header.html");
 
-$('footer').load("footer.html");
+$('footer').load("footer.html", function(response, status, xhr) {
+    wow.init();
+});
+
+$('.block-contact-us-main').load("block-contact-us-main.html", function(response, status, xhr) {
+    wow.init();
+});
 
 if ($.contains(document.body, document.getElementById('slider-main'))) {
 

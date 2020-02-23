@@ -1,0 +1,146 @@
+.block-experience-main {
+    padding: 45px 0px;
+    background-color: $color-primary;
+
+    .container-white {
+        width: 200%;
+        margin-left: -100%;
+        padding: 31px 91px 31px 100%;
+        background-color: #FFF;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 40px;
+            padding: 30px 15px 30px 100%;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 40px;
+            padding: 30px 15px 30px 100%;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 40px;
+            padding: 30px 15px 30px 100%;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 40px;
+            padding: 30px 15px 30px 100%;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 40px;
+            color: $color-primary;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-weight: 600;
+            line-height: 25px;
+            color: $color-primary;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 0px;
+            padding-left: 0px;
+
+            li {
+                padding-left: 17px;
+                background: transparent url('../img/icon-list.png') left 4px no-repeat;
+                font-weight: 600;
+                line-height: 30px;
+                color: $color-primary;
+            }
+        }
+    }
+
+    .container-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            flex-direction: column;
+        }
+
+        @include respond-to($phone-tablet) {
+            flex-direction: column;
+        }
+
+        @include respond-to($tablet-medium) {
+            flex-direction: column;
+        }
+
+        @include respond-to($medium-large) {
+            flex-direction: column;
+        }
+
+        .content-items {
+            padding: 0px 15px;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                padding: 0px;
+            }
+
+            @include respond-to($phone-tablet) {
+                padding: 0px;
+            }
+
+            @include respond-to($tablet-medium) {
+                padding: 0px;
+            }
+
+            @include respond-to($medium-large) {
+                padding: 0px;
+            }
+
+            h3 {
+                min-height: 72px;
+                margin-bottom: 31px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 20px;
+                color: #FFF;
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    min-height: auto;
+                }
+
+                @include respond-to($phone-tablet) {
+                    min-height: auto;
+                }
+
+                @include respond-to($tablet-medium) {
+                    min-height: auto;
+                }
+
+                @include respond-to($medium-large) {
+                    min-height: auto;
+                }
+            }
+
+            p {
+                margin-bottom: 30px;
+                font-weight: 600;
+                font-size: 17px;
+                color: #FFF;
+            }
+
+            &:last-child {
+
+                p {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

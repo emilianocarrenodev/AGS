@@ -1,0 +1,56 @@
+.block-our-sign-main {
+    padding-top: 65px;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        padding-top: 40px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding-top: 40px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding-top: 40px;
+    }
+
+    h2 {
+        margin-bottom: 38px;
+        font-weight: 700;
+        line-height: 43px;
+        font-size: 40px;
+        color: $color-primary;
+    }
+
+    p {
+        margin-bottom: 100px;
+        font-weight: 600;
+        line-height: 25px;
+        color: $color-primary;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 35px;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 35px;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 35px;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 35px;
+        }
+    }
+
+    .btn-secondary {
+        margin-bottom: 30px;
+    }
+
+    .btn-whatsapp-float {
+        margin-bottom: 10px;
+    }
+}

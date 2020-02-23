@@ -1,0 +1,89 @@
+.block-services-btns {
+    padding: 60px 0px;
+
+    .col-12 {
+        background: transparent url('../img/bg-border-right.png') right center no-repeat;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            background: transparent;
+        }
+
+        @include respond-to($phone-tablet) {
+            background: transparent;
+        }
+
+        @include respond-to($tablet-medium) {
+            background: transparent;
+        }
+
+        @include respond-to($medium-large) {
+            background: transparent;
+        }
+
+        .btn-link {
+            padding: 0px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 25px;
+            font-size: 20px;
+            color: $color-primary;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                margin-bottom: 15px;
+            }
+
+            @include respond-to($phone-tablet) {
+                margin-bottom: 15px;
+            }
+
+            @include respond-to($tablet-medium) {
+                margin-bottom: 15px;
+            }
+
+            @include respond-to($medium-large) {
+                margin-bottom: 15px;
+            }
+
+            &:hover,
+            &.active {
+                font-weight: 900;
+            }
+        }
+
+        &:last-child {
+            background: transparent;
+
+            // Breakpoints
+            @include respond-to($phone) {
+
+                .btn-link {
+                    margin-bottom: 0px !important;
+                }
+            }
+
+            @include respond-to($phone-tablet) {
+
+                .btn-link {
+                    margin-bottom: 0px !important;
+                }
+            }
+
+            @include respond-to($tablet-medium) {
+
+                .btn-link {
+                    margin-bottom: 0px !important;
+                }
+            }
+
+            @include respond-to($medium-large) {
+
+                .btn-link {
+                    margin-bottom: 0px !important;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,900&display=swap');
 
 * {
     font-family: 'Raleway', ;
@@ -32,6 +32,13 @@ section {
     position: relative;
 }
 
+/*Estilos generales*/
+.btn-whatsapp-float {
+    width: 73px;
+    height: 73px;
+    display: block;
+}
+
 /*padding y margin*/
 
 /*Titulos*/
@@ -47,12 +54,59 @@ section {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
+    font-weight: 600;
+    font-size: 15px;
     color: $color-primary;
 
     &:hover {
         border: 2px solid $color-primary;
         background-color: $color-secondary;
         color: $color-primary;
+    }
+}
+
+.btn-secondary {
+    padding: 15px 40px 8px 40px;
+    text-transform: uppercase;
+    border: 2px solid $color-secondary;
+    background-color: transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    font-weight: 600;
+    color: $color-secondary;
+
+    &:hover {
+        border: 2px solid $color-primary;
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+}
+
+.btn-info {
+    padding: 11px;
+    text-transform: uppercase;
+    border: none;
+    background-color: $color-secondary;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    box-shadow: none !important;
+    outline: 0px !important;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 20px;
+    color: #FFF;
+
+    span {
+        width: 100%;
+        padding: 21px 15px 11px 15px;
+        border: 1px solid #FFF;
+    }
+
+    &:hover,
+    &.active {
+        background-color: $color-primary !important;
     }
 }
 

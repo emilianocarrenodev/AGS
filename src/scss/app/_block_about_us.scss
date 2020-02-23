@@ -1,0 +1,68 @@
+.block-about-us {
+    padding: 40px 0px 57px 0px;
+
+    .btn-info {
+        margin-bottom: 15px;
+    }
+
+    .container-info {
+        margin-top: 30px;
+
+        h2 {
+            margin-bottom: 47px;
+            line-height: 45px;
+            font-weight: 700;
+            font-size: 40px;
+            color: $color-secondary;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                margin-bottom: 20px;
+            }
+
+            @include respond-to($phone-tablet) {
+                margin-bottom: 20px;
+            }
+
+            @include respond-to($tablet-medium) {
+                margin-bottom: 20px;
+            }
+
+            @include respond-to($medium-large) {
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            line-height: 25px;
+            font-weight: 600;
+            color: $color-primary;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                margin-bottom: 30px;
+            }
+
+            @include respond-to($phone-tablet) {
+                margin-bottom: 30px;
+            }
+
+            @include respond-to($tablet-medium) {
+                margin-bottom: 30px;
+            }
+
+            @include respond-to($medium-large) {
+                margin-bottom: 30px;
+            }
+        }
+
+        .content-image {
+            width: 100%;
+            min-height: 513px;
+            background-color: #FFF;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+}

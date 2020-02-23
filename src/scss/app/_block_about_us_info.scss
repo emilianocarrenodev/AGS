@@ -1,0 +1,115 @@
+.block-about-us-info {
+    padding: 60px 0px 100px 0px;
+    background-color: $color-primary;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        padding: 90px 0px 60px 0px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding: 90px 0px 60px 0px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding: 90px 0px 60px 0px;
+    }
+
+    .btn-whatsapp-float {
+        top: 45%;
+        right: 40px;
+        position: absolute;
+        z-index: 1;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            top: 15px;
+            right: 13px;
+        }
+
+        @include respond-to($phone-tablet) {
+            top: 15px;
+            right: 13px;
+        }
+
+        @include respond-to($tablet-medium) {
+            top: 15px;
+            right: 13px;
+        }
+    }
+
+    .container {
+        max-width: 700px;
+
+        h2 {
+            margin-bottom: 57px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 45px;
+            font-size: 40px;
+            color: $color-secondary;
+        }
+
+        ul {
+            margin-bottom: 0px;
+            list-style: none;
+            padding-left: 0px;
+
+            li {
+                margin-bottom: 70px;
+                padding-left: 185px;
+                background-color: transparent;
+                background-size: 97px 97px;
+                background-position: top left;
+                background-repeat: no-repeat;
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    margin-bottom: 30px;
+                    padding-top: 140px;
+                    padding-left: 0px;
+                    background-position: top center;
+                }
+
+                @include respond-to($phone-tablet) {
+                    margin-bottom: 30px;
+                    padding-top: 140px;
+                    padding-left: 0px;
+                    background-position: top center;
+                }
+
+                h3 {
+                    margin-bottom: 21px;
+                    font-weight: 700;
+                    line-height: 25px;
+                    font-size: 23px;
+                    color: $color-secondary;
+                }
+
+                p {
+                    margin-bottom: 0px;
+                    font-weight: 600;
+                    line-height: 25px;
+                    color: #FFF;
+                }
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                &.icon-about-us-1 {
+                    background-image: url('../img/icon-about-us-1.png');
+                }
+
+                &.icon-about-us-2 {
+                    background-image: url('../img/icon-about-us-2.png');
+                }
+
+                &.icon-about-us-3 {
+                    background-image: url('../img/icon-about-us-3.png');
+                }
+            }
+        }
+    }
+}
