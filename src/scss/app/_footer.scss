@@ -27,6 +27,34 @@
         background-image: url('../img/bg-orange-top-100.png');
     }
 
+    .btn-whatsapp-float {
+        top: 60px;
+        right: 30px;
+        position: absolute;
+        z-index: 1;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            top: -35px;
+            right: 10px;
+        }
+
+        @include respond-to($phone-tablet) {
+            top: -35px;
+            right: 10px;
+        }
+
+        @include respond-to($tablet-medium) {
+            top: -35px;
+            right: 10px;
+        }
+
+        @include respond-to($medium-large) {
+            top: -35px;
+            right: 10px;
+        }
+    }
+
     h2 {
         margin-bottom: 22px;
         font-weight: 600;
