@@ -4,6 +4,8 @@
     font-family: 'Raleway', ;
     font-weight: 500;
     font-size: 20px;
+    box-shadow: none !important;
+    outline: 0px !important;
 }
 
 a {
@@ -32,6 +34,17 @@ section {
     position: relative;
 }
 
+.alert {
+    display: none;
+}
+
+.btn-whatsapp-float {
+    top: 200px;
+    right: 0px;
+    position: fixed;
+    z-index: 1;
+}
+
 /*Estilos generales*/
 .btn-whatsapp-float {
     width: 73px;
@@ -52,10 +65,12 @@ section {
     font-size: 15px;
     color: $color-primary;
 
-    &:hover {
-        border: 2px solid $color-primary;
-        background-color: $color-secondary;
-        color: $color-primary;
+    &:hover,
+    &:focus,
+    &:active {
+        border: 2px solid $color-primary !important;
+        background-color: $color-secondary !important;
+        color: $color-primary !important;
     }
 }
 
@@ -70,10 +85,12 @@ section {
     font-weight: 600;
     color: $color-secondary;
 
-    &:hover {
-        border: 2px solid $color-primary;
-        background-color: $color-secondary;
-        color: $color-primary;
+    &:hover,
+    &:focus,
+    &:active {
+        border: 2px solid $color-primary !important;
+        background-color: $color-secondary !important;
+        color: $color-primary !important;
     }
 }
 
@@ -99,6 +116,8 @@ section {
     }
 
     &:hover,
+    &:focus,
+    &:active,
     &.active {
         background-color: $color-primary !important;
     }

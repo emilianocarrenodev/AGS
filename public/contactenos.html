@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <ul class="nav d-none d-lg-flex">
+                <ul class="nav d-block d-lg-flex">
                     <li class="nav-item">
                         <a class="nav-link icon-phone" href="tel:+573115467287">3115467287</a>
                     </li>
@@ -49,57 +49,58 @@
     </header>
     <!--Slider principal-->
     <section class="block-banner-main type-two">
-        <div id="slider-main" class="swiper-container">
+        <div id="slider-internal" class="swiper-container swiper-container-internal">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image: url('./assets/img/filter-slider-main.png'), url('./assets/img/209.png');">
                     <div class="container">
                         <img src="./assets/img/image-asesoria-legal.png" class="img-fluid" alt="Asesoria Legal">
                     </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url('./assets/img/filter-slider-main.png'), url('./assets/img/209.png');">
-                    <div class="container">
-                        <img src="./assets/img/image-asesoria-legal.png" class="img-fluid" alt="Asesoria Legal">
-                    </div>
-                </div>
             </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </section>
     <!--Fin slider principal-->
     <section class="section-footer type-two">
-        <a href="tel:" class="btn-whatsapp-float">
-            <img src="./assets/img/icon-whatsapp-float.png" class="img-fluid">
-        </a>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <h2>Contáctenos</h2>
-                    <form>
+                    <form id="form-contact" action="sendmail.php" method="POST">
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nombre">
+                                    <input type="text" class="form-control" placeholder="Nombre" name="name" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Mail">
+                                    <input type="email" class="form-control" placeholder="Mail" name="email" required>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Número celular">
+                                    <input type="text" class="form-control" placeholder="Número celular" name="phone" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="3" placeholder="Mensaje:"></textarea>
+                                    <textarea class="form-control" rows="3" placeholder="Mensaje:" name="message" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="alert alert-success" role="alert">
+                                        Mensaje enviado con exito!!!
+                                    </div>
+                                    <div class="alert alert-danger" role="alert">
+                                        Error, intente de nuevo por favor!!!
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -135,6 +136,9 @@
     <!--Bloque contactenos-->
     <section class="block-contact-us-main border-bottom-55" style="background-image: url('./assets/img/google-maps.png');"></section>
     <!--Fin bloque contactenos-->
+    <a href="tel:+573115467287" target="_self" class="btn-whatsapp-float">
+        <img src="./assets/img/icon-whatsapp-float.png" class="img-fluid">
+    </a>
     <script type="text/javascript" src="./assets/js/bundle.min.js"></script>
 </body>
 

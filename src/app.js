@@ -32,4 +32,44 @@ if ($.contains(document.body, document.getElementById('slider-main'))) {
     });
 }
 
+if ($.contains(document.body, document.getElementById('slider-internal'))) {
+
+    var mySwiper = new Swiper('.swiper-container-internal', {
+        autoplay: {
+            delay: 5000,
+        },
+        loop: false
+    });
+}
+
+$(document).on('submit', '#form-contact', function(event) {
+    event.preventDefault();
+
+    $('#form-contact .btn-primary').addClass('disabled');
+
+    $.ajax({
+        cache: false,
+        type: $(this).attr("method"),
+        url: $(this).attr("action"),
+        data: $(this).serialize(),
+        success: function(data) {
+
+            $('.alert').hide();
+            $('#form-contact .btn-primary').removeClass('disabled');
+
+            if (data)
+            {
+                $('.alert-success').fadeIn();
+                $("#form-contact")[0].reset();
+            }
+            else
+            {
+                $('.alert-danger').fadeIn();
+            }
+
+            setTimeout(function() { $('.alert').hide(); }, 5000);
+        }
+    });
+});
+
 wow.init();

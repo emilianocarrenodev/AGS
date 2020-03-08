@@ -21,29 +21,40 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.(sa|sc|c)ss$/,
-            use: [
-                MiniCssExtractPlugin.loader,
-                {
-                    loader: 'css-loader',
+                test: /\.m?js$/,
+                exclude: [/node_modules\/(?!(swiper|dom7)\/).*/, /\.test\.jsx?$/],
+                use: {
+                    loader: 'babel-loader',
                     options: {
-                        url: false
+                        presets: ['@babel/preset-env']
                     }
-                },
-                {
-                    loader: 'postcss-loader',
-                    options: {
-                        autoprefixer: {
-                            browser: ["last 2 versions"]
-                        },
-                        plugins: () => [
-                            autoprefixer
-                        ]
-                    }
-                },
-                'sass-loader'
-            ],
-        }]
+                }
+            },
+            {
+                test: /\.(sa|sc|c)ss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: false
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            autoprefixer: {
+                                browser: ["last 2 versions"]
+                            },
+                            plugins: () => [
+                                autoprefixer
+                            ]
+                        }
+                    },
+                    'sass-loader'
+                ],
+            }
+        ]
     },
     plugins: [
         new MiniCssExtractPlugin({
@@ -51,7 +62,6 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
-            //jQuery: 'jquery',
             Popper: 'popper.js',
         })
     ]

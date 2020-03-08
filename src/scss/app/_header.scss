@@ -25,9 +25,33 @@ header {
             padding-top: 15px;
         }
 
+        .navbar-toggler {
+            background-color: #FFF;
+        }
+
         .nav {
 
+            // Breakpoints
+            @include respond-to($phone) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            @include respond-to($phone-tablet) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
             .nav-item {
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    width: 100%;
+                }
+
+                @include respond-to($phone-tablet) {
+                    width: 100%;
+                }
 
                 .nav-link {
                     margin-right: 30px;
@@ -42,9 +66,29 @@ header {
                     background-repeat: no-repeat;
 
                     // Breakpoints
+                    @include respond-to($phone) {
+                        margin-right: 0px;
+                        padding: 0px 0px 0px 30px;
+                    }
+
+                    @include respond-to($phone-tablet) {
+                        margin-right: 0px;
+                        padding: 0px 0px 0px 30px;
+                    }
+
+                    @include respond-to($tablet-medium) {
+                        margin-right: 0px;
+                        padding: 0px 0px 0px 30px;
+                    }
+
+                    @include respond-to($medium-large) {
+                        margin-right: 0px;
+                        padding: 0px 0px 0px 30px;
+                    }
+
                     @include respond-to($large-extra) {
                         margin-right: 0px;
-                        padding-left: 30px;
+                        padding: 0px 0px 0px 30px;
                     }
 
                     &.icon-phone {
@@ -67,12 +111,53 @@ header {
 
         .navbar-collapse {
 
+            // Breakpoints
+            @include respond-to($phone) {
+                padding: 15px;
+                margin-top: 15px;
+                background-color: #FFF;
+            }
+
+            @include respond-to($phone-tablet) {
+                padding: 15px;
+                margin-top: 15px;
+                background-color: #FFF;
+            }
+
+            @include respond-to($tablet-medium) {
+                padding: 15px;
+                margin-top: 15px;
+                background-color: #FFF;
+            }
+
+            @include respond-to($medium-large) {
+                padding: 15px;
+                margin-top: 15px;
+                background-color: #FFF;
+            }
+
             .navbar-nav {
 
                 .nav-item {
                     margin-right: 50px;
 
                     // Breakpoints
+                    @include respond-to($phone) {
+                        margin-right: 0px;
+                    }
+
+                    @include respond-to($phone-tablet) {
+                        margin-right: 0px;
+                    }
+
+                    @include respond-to($tablet-medium) {
+                        margin-right: 0px;
+                    }
+
+                    @include respond-to($medium-large) {
+                        margin-right: 0px;
+                    }
+
                     @include respond-to($large-extra) {
                         margin-right: 30px;
                     }
@@ -121,6 +206,39 @@ header {
 
                     &:last-child {
                         margin-right: 0px;
+                    }
+
+
+                    &:last-child {
+
+                        // Breakpoints
+                        @include respond-to($phone) {
+
+                            .nav-link {
+                                margin-bottom: 0px;
+                            }
+                        }
+
+                        @include respond-to($phone-tablet) {
+
+                            .nav-link {
+                                margin-bottom: 0px;
+                            }
+                        }
+
+                        @include respond-to($tablet-medium) {
+
+                            .nav-link {
+                                margin-bottom: 0px;
+                            }
+                        }
+
+                        @include respond-to($medium-large) {
+
+                            .nav-link {
+                                margin-bottom: 0px;
+                            }
+                        }
                     }
                 }
             }

@@ -1,3 +1,6 @@
+<a href="tel:+573115467287" target="_self" class="btn-whatsapp-float">
+    <img src="./assets/img/icon-whatsapp-float.png" class="img-fluid">
+</a>
 <section class="section-footer">
     <div class="container">
         <div class="row">
@@ -10,37 +13,49 @@
                     <li><a href="mailto:asociadojuridico2@asesorialegalags.com" target="_self">asociadojuridico2@asesorialegalags.com</a></li>
                 </ul>
                 <div class="container-social-network">
-                    <a href=""><i class="lni-facebook-filled"></i></a>
-                    <a href=""><i class="lni-twitter-filled"></i></a>
-                    <a href=""><i class="lni-linkedin"></i></a>
+                    <a href="https://www.facebook.com/Asesor%C3%ADa-Legal-AGS-102797971341782/?eid=ARChit9McG9Fbm3QK0uAnz-F9ohJ5A7N8-KFGKoJxykZ-XuyNZw2uY24N_EffQmcpi3fsgnldrYIAAKR" target="_blank"><i class="lni-facebook-filled"></i></a>
+                    <a href="" target="_blank"><i class="lni-twitter-filled"></i></a>
+                    <a href="https://www.linkedin.com/company/asesor%C3%ADalegalags/?viewAsMember=true" target="_blank"><i class="lni-linkedin"></i></a>
                 </div>
             </div>
             <div class="col-12 col-lg-6 wow slideInRight" data-wow-delay="0.5s">
                 <h2>Contáctenos</h2>
-                <form>
+                <form id="form-contact" action="sendmail.php" method="POST">
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Nombre">
+                                <input type="text" class="form-control" placeholder="Nombre" name="name" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Mail">
+                                <input type="email" class="form-control" placeholder="Mail" name="email" required>
                             </div>
                         </div>
                         <div class="col-12 col-lg-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Número celular">
+                                <input type="text" class="form-control" placeholder="Número celular" name="phone" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                                <textarea class="form-control" rows="3" placeholder="Mensaje:"></textarea>
+                                <textarea class="form-control" rows="3" placeholder="Mensaje:" name="message" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <div class="alert alert-success" role="alert">
+                                    Mensaje enviado con exito!!!
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                    Error, intente de nuevo por favor!!!
+                                </div>
                             </div>
                         </div>
                     </div>

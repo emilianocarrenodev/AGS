@@ -103,6 +103,10 @@
                     line-height: 25px;
                     font-size: 18px;
                     color: $color-primary;
+
+                    &:hover {
+                        color: #FFF;
+                    }
                 }
             }
         }
