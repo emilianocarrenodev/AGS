@@ -1,7 +1,6 @@
 <?php if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['message'])) {
     
-    $to      = 'emiliano0662@gmail.com';
-    //$to      = 'direccionjuridica@asesorialegalags.com';
+    $to      = 'direccionjuridica@asesorialegalags.com';
 	$subject = "Nuevo mensaje de contacto";
 
 	$headers = "From: " . strip_tags($_POST['email']) . "\r\n";
